@@ -1,7 +1,7 @@
 %-----------------------------------------------------------------------
-% Job saved via SPM GUI | 07.04.19 19:19:17 by cfg_util (rev $Rev: 7345 $)
+% Job saved via SPM GUI | 09.04.19 23:13:31 by cfg_util (rev $Rev: 7345 $)
 % spm SPM - SPM12 (7487)
-% cfg_basicio BasicIO 
+% cfg_basicio BasicIO
 % This is called by runjob.m - populates UNDEFINED fields
 %-----------------------------------------------------------------------
 matlabbatch{1}.cfg_basicio.file_dir.dir_ops.cfg_named_dir.name = 'subject_dir';
@@ -33,11 +33,11 @@ matlabbatch{4}.spm.spatial.realignunwarp.uwroptions.rinterp = 4;
 matlabbatch{4}.spm.spatial.realignunwarp.uwroptions.wrap = [0 0 0];
 matlabbatch{4}.spm.spatial.realignunwarp.uwroptions.mask = 1;
 matlabbatch{4}.spm.spatial.realignunwarp.uwroptions.prefix = 'u';
-matlabbatch{5}.spm.temporal.st.scans{1}(1) = cfg_dep('Realign & Unwarp: Unwarped Mean Image', substruct('.','val', '{}',{4}, '.','val', '{}',{1}, '.','val', '{}',{1}), substruct('.','meanuwr'));
+matlabbatch{5}.spm.temporal.st.scans{1}(1) = cfg_dep('Realign & Unwarp: Unwarped Images (Sess 1)', substruct('.','val', '{}',{4}, '.','val', '{}',{1}, '.','val', '{}',{1}), substruct('.','sess', '()',{1}, '.','uwrfiles'));
 matlabbatch{5}.spm.temporal.st.nslices = 32;
 matlabbatch{5}.spm.temporal.st.tr = 2;
 matlabbatch{5}.spm.temporal.st.ta = 1.9375;
-matlabbatch{5}.spm.temporal.st.so = [1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32];
+matlabbatch{5}.spm.temporal.st.so = [1 3 5 7 9 11 13 15 17 19 21 23 25 27 29 31 2 4 6 8 10 12 14 16 18 20 22 24 26 28 30 32];;
 matlabbatch{5}.spm.temporal.st.refslice = 16;
 matlabbatch{5}.spm.temporal.st.prefix = 'a';
 matlabbatch{6}.spm.spatial.coreg.estimate.ref(1) = cfg_dep('Realign & Unwarp: Unwarped Mean Image', substruct('.','val', '{}',{4}, '.','val', '{}',{1}, '.','val', '{}',{1}), substruct('.','meanuwr'));
