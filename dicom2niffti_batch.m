@@ -1,7 +1,8 @@
 % ========================================================================
 % DICOM to NIFTI conversion using dicom2nifti
-% dicominfo('dicom_file_name')
 % ========================================================================
+% dicominfo('dicom_file_name') for info
+%
 % set origin & target folders
 ddir='/Users/ibburuna/Desktop/data/ULL_Blind/DICOM/'; % DICOM files
 sdir='/Users/ibburuna/Desktop/data/ULL_Blind/NIFTI/'; % NIFTI target
