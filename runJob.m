@@ -9,7 +9,7 @@
 clear, clc, close all
 root = '/Users/ibburuna/Desktop/data/ULL_Blind/'; % project folder
 NIFTI = fullfile(root, 'NIFTI/');  % folder containing subject subfolders
-sdir = dir([NIFTI '*']); % subject files
+sdir = dir([NIFTI '*']); % list of subject subfolders
 sdir(strncmp({sdir.name}, '.', 1)) = []; % this removes system files in Mac just in case
 jobfile = {fullfile(root, 'scripts/SPMbatch/job.m')}; % location of jobfile
 jobs = repmat(jobfile, 1, numel(sdir));
